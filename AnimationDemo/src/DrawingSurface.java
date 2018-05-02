@@ -75,12 +75,13 @@ public class DrawingSurface extends PApplet {
 				Rectangle r = (Rectangle)s;
 				rect(r.x,r.y,r.width,r.height);
 			}
+			
 		}
 
 		mario.draw(this);
 
 		popMatrix();
-
+		
 
 		// modifying stuff
 
