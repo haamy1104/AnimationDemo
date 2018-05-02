@@ -23,7 +23,16 @@ public class Mario extends Sprite {
 		// JUMP!
 	}
 
-	public void act(ArrayList<Shape> obstacles) {
+	public void act(ArrayList<Shape> obstacles) 
+	{
+		boolean freeFall = true;
+		for(Shape s : obstacles)
+		{
+			if(s.contains(this.getCenterX(), this.getMaxY()))
+				freeFall = false;
+		}
+		if(freeFall)
+			moveByAmount(0, 1);
 		// FALL (and stop when a platform is hit)
 	}
 
