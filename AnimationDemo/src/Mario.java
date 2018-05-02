@@ -21,7 +21,6 @@ public class Mario extends Sprite {
 
 	public void jump() {
 		// JUMP!
-		super.moveByAmount(0, -10);
 	}
 
 	public void act(ArrayList<Shape> obstacles) 
@@ -36,6 +35,4 @@ public class Mario extends Sprite {
 			moveByAmount(0, 1);
 		// FALL (and stop when a platform is hit)
 	}
-
-
 }
