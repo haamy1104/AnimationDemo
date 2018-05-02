@@ -14,12 +14,13 @@ public class Mario extends Sprite {
 
 	public Mario(PImage img, int x, int y) {
 		super(img, x, y, MARIO_WIDTH, MARIO_HEIGHT);
+		vY = 0;
 	}
 
 	// METHODS
 	public void walk(int dir) {
 		// WALK!
-		moveByAmount(dir, 0);
+		moveByAmount(2*dir, 0);
 	}
 
 	public void jump() {
